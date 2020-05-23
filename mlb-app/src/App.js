@@ -8,6 +8,7 @@ class App extends Component {
     <div className="App">
       MLB APP
       <FirstComponent></FirstComponent>
+      <ThirdComponent></ThirdComponent>
     </div>
   );
 }
@@ -22,5 +23,15 @@ class FirstComponent extends Component {
   );
 }
 }
+// function component
+function ThirdComponent(){
+  return (
+    <div className="thirdComponent">
+      ThirdComponent
+    </div>
+  );
+}
+
+
 
 export default App;
