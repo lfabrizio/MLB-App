@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FirstComponent from './components.learning-examples/FirstComponent'
+import FirstComponent, {SecondComponent} from './components.learning-examples/FirstComponent'
 import logo from './logo.svg';
 import './App.css';
 
