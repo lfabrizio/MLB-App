@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import FirstComponent, {SecondComponent} from './components.learning-examples/FirstComponent'
+import FirstComponent from './Components/Learning-Examples/FirstComponent'
+import SecondComponent from './Components/Learning-Examples/SecondComponent'
+import ThirdComponent from './Components/Learning-Examples/ThirdComponent'
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,20 +11,14 @@ class App extends Component {
     <div className="App">
       MLB APP
       <FirstComponent></FirstComponent>
+      <SecondComponent></SecondComponent>
       <ThirdComponent></ThirdComponent>
     </div>
   );
 }
 }
 
-// function component
-function ThirdComponent(){
-  return (
-    <div className="thirdComponent">
-      ThirdComponent
-    </div>
-  );
-}
+
 
 
 
