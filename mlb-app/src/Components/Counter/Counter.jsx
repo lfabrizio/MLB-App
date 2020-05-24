@@ -1,10 +1,12 @@
 import React from 'react'
 
 // function component
-export default function ThirdComponent(){
+ function Counter(){
     return (
-      <div className="thirdComponent">
-        ThirdComponent
+      <div className="counter">
+        Counter
       </div>
     );
   }
+
+  export default Counter
