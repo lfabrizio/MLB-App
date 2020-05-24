@@ -9,16 +9,24 @@ class App extends Component {
   render() {
   return (
     <div className="App">
-      MLB APP
-      <FirstComponent></FirstComponent>
-      <SecondComponent></SecondComponent>
-      <ThirdComponent></ThirdComponent>
+      <LearningComponents></LearningComponents>
     </div>
   );
 }
 }
 
-
+class LearningComponents extends Component {
+  render() {
+    return (
+      <div className="LearningComponents">
+        MLB APP
+        <FirstComponent></FirstComponent>
+        <SecondComponent></SecondComponent>
+        <ThirdComponent></ThirdComponent>
+      </div>
+    );
+  } 
+}
 
 
 
