@@ -16,7 +16,7 @@ import './Counter.css'
     return (
       <div className="counter">
         <button onClick={this.increment}>Days til Season Resumes</button>
-        <span className="count" >{this.state.counter}</span>
+        <span className="count">{this.state.counter}</span>
       </div>
     );
   }
