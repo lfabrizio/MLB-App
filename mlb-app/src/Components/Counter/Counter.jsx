@@ -1,18 +1,33 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './Counter.css'
 
-// function component
- function Counter(){
+
+ class Counter extends Component{
+    // define instial state in constructor 
+    //state => counter 0
+    constructor() {
+        super();
+        this.state = {
+            counter : 0
+        }
+        this.increment = this.increment.bind(this);
+    }
+     render() {
     return (
       <div className="counter">
-        <button onClick={increment}>+1</button>
-        <span className="count" >0</span>
+        <button onClick={this.increment}>Days til Season Resumes</button>
+        <span className="count" >{this.state.counter}</span>
       </div>
     );
   }
 
-function increment() {
-    console.log('increment');
+ increment() { //update state
+    // console.log('increment');
+    this.state.counter++;
+    this.setState({
+        counter: this.state.counter + 1
+    });
+    
 }
-
+ }
   export default Counter
