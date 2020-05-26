@@ -3,6 +3,7 @@ import FirstComponent from './Components/Learning-Examples/FirstComponent'
 import SecondComponent from './Components/Learning-Examples/SecondComponent'
 import ThirdComponent from './Components/Learning-Examples/ThirdComponent'
 import Counter from './Components/Counter/Counter'
+import AddApp from './Components/Add/AddApp'
 import Title from './Components/Learning-Examples/Title';
 import logo from './logo.svg';
 import './App.css';
@@ -13,7 +14,8 @@ class App extends Component {
     <div className="App">
         <Title/>
       <Counter/>
-    
+      
+      <AddApp/>
 
     </div>
   );
