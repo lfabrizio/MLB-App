@@ -4,12 +4,20 @@ import './Title.css';
 
 function Title() {
   return (
-    <div className="Title">
-              
-      <h1>MLB APP </h1>
-      <h1 style={{ fontSize: "2em"}}><span role="img" aria-label="baseball emoji">⚾🧢</span></h1>
-    </div>
-  )
-}
+<header>
+  <div class="container">
 
+    <p class="main">MLB ⚾ APP</p>
+    
+  </div>
+  <ul>
+    <li><a href="#"><span data-text="News">News</span></a></li>
+    <li><a href="#"><span data-text="Scores">Scores</span></a></li>
+    <li><a href="#"><span data-text="Standings">Standings</span></a></li>
+    <li><a href="#"><span data-text="Statistics">Statistics</span></a></li>
+    <li><a href="#"><span data-text="Fantasy">Fantasy Baseball</span></a></li>
+  </ul>
+</header>
+
+  )}
 export default Title

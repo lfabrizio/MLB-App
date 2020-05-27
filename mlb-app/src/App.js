@@ -7,16 +7,16 @@ import AddApp from './Components/Add/AddApp'
 import Title from './Components/Learning-Examples/Title';
 import logo from './logo.svg';
 import './App.css';
+import './bootstrap.css';
 
 class App extends Component {
   render() {
   return (
     <div className="App">
-        <Title/>
-      <Counter/>
-      
+       <Title/>
+         
+      {/* <Counter/> */} 
       <AddApp/>
-
     </div>
   );
 }

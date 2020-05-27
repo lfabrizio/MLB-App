@@ -24,9 +24,25 @@
   color: white;
 }
 
+.content {
+    position: relative;
+}
+
 .App-link {
   color: #395c66;
 }
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
 
 @keyframes App-logo-spin {
   from {
