@@ -2,7 +2,7 @@
 
 
   body {
-    background-color: rgb(42, 41, 49);
+    background-color: rgb(158, 190, 15);
     height: 95vh;
   }
   
@@ -14,16 +14,16 @@
     width: 100%;
   
     font-size: 50px;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
-    color:red;
+    color:rgb(230, 9, 9);
     font-weight: bold;
   }
   
   .main {
     animation-name: slideDown;
-    animation-duration: 2s;
-    margin-right: 8px;
+    animation-duration: 5s;
+    margin-right: 10px;
   }
   
 
@@ -81,7 +81,7 @@
     line-height: 50px;
     margin: 0 10px;
     text-decoration: none;
-    border-top: 4px solid #0076d4;
+    border-top: 4px solid #dcfdd8;
   }
   ul li a span {
     width: 100%;
@@ -103,8 +103,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: whitesmoke;
-    color: #262626;
+    background: rgb(236, 232, 232);
+    color: #ebf7f0;
     transform-origin: top;
     transform: rotateX(270deg);
     transition: .5s;
@@ -119,7 +119,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: blue;
+    background: rgb(248, 24, 24);
     color: #fff;
     transform-origin: top;
     transform: rotateX(270deg);
@@ -153,26 +153,26 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-#ball {
+/* #ball {
   position: fixed;
   top: 3em;
   width: 3em;
   height: 3em;
   left: 6em;
-  /* -webkit-animation: bounce .3s cubic-bezier(.63,.09,.76,.45) infinite alternate;
+  -webkit-animation: bounce .3s cubic-bezier(.63,.09,.76,.45) infinite alternate;
   -moz-animation:    bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
   -o-animation:      bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
-  animation:         bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate; */
-}
+  animation:         bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
+} */
 
 #bat {
   position: fixed;
   top: 3em;
   left: -10.5em;
-  /* -webkit-animation: hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  -webkit-animation: hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
   -moz-animation:    hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
   -o-animation:      hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
-  animation:         hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate; */
+  animation:         hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
 }
 
 .red {
@@ -202,102 +202,21 @@ html, body {
   position: absolute;
   left: 50%;
   top: 50%;
-  /* -webkit-transform: translate(-50%, -50%); */
-  transform: translate(-50%, -50%);
-}
-
-#ball {
-  position: fixed;
-  top: 3em;
-  width: 3em;
-  height: 3em;
-  left: 6em;
-  /* -webkit-animation: bounce .3s cubic-bezier(.63,.09,.76,.45) infinite alternate;
-  -moz-animation:    bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
-  -o-animation:      bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
-  animation:         bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate; */
-}
-
-#bat {
-  position: fixed;
-  top: 3em;
-  left: -10.5em;
-  /* -webkit-animation: hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
-  -moz-animation:    hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
-  -o-animation:      hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
-  animation:         hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate; */
-}
-
-.red {
-  fill:#D7172A;
-}
-
-.tan {
-  fill:#FFD87D;
-}
-
-.white {
-  fill:#ffffff;
-}
-
-
-
-/* @-webkit-keyframes bounce {
-  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
-  25% { height: 3em; width: 3em; }
-  75% { height: 3em; width: 3em; }
-  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
-}
-
-@-moz-keyframes bounce {
-  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
-  25% { height: 3em; width: 3em; }
-  75% { height: 3em; width: 3em; }
-  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
-}
-
-@-o-keyframes bounce {
-  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
-  25% { height: 3em; width: 3em; }
-  75% { height: 3em; width: 3em; }
-  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); } */
-/* } */
-
-@keyframes bounce {
-  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
-  25% { height: 3em; width: 3em; }
-  75% { height: 3em; width: 3em; }
-  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
-} html, body {
-  background: repeating-linear-gradient(120deg,
-  #236533,
-  #236533 127px,
-  #1a5127 127px,
-  #1a5127 260px);
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
-#ball {
+/* #ball {
   position: fixed;
   top: 3em;
   width: 3em;
   height: 3em;
   left: 6em;
-  /* -webkit-animation: bounce .3s cubic-bezier(.63,.09,.76,.45) infinite alternate;
+  -webkit-animation: bounce .3s cubic-bezier(.63,.09,.76,.45) infinite alternate;
   -moz-animation:    bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
   -o-animation:      bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
-  animation:         bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate; */
-}
+  animation:         bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
+} */
 
 #bat {
   position: fixed;
@@ -323,6 +242,87 @@ html, body {
 
 
 /* 
+@-webkit-keyframes bounce {
+  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
+  25% { height: 3em; width: 3em; }
+  75% { height: 3em; width: 3em; }
+  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
+}
+
+@-moz-keyframes bounce {
+  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
+  25% { height: 3em; width: 3em; }
+  75% { height: 3em; width: 3em; }
+  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
+}
+
+@-o-keyframes bounce {
+  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
+  25% { height: 3em; width: 3em; }
+  75% { height: 3em; width: 3em; }
+  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); } 
+ }
+
+@keyframes bounce {
+  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
+  25% { height: 3em; width: 3em; }
+  75% { height: 3em; width: 3em; }
+  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
+} html, body {
+  background: repeating-linear-gradient(120deg,
+  #236533,
+  #236533 127px,
+  #1a5127 127px,
+  #1a5127 260px);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+} */
+
+/* .loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+#ball {
+  position: fixed;
+  top: 3em;
+  width: 3em;
+  height: 3em;
+  left: 6em;
+  /* -webkit-animation: bounce .5s cubic-bezier(.93,.09,.76,.45) infinite;
+  -moz-animation:    bounce .5s cubic-bezier(.93,.09,.76,.45)  infinite;
+  -o-animation:      bounce .5s cubic-bezier(.93,.09,.76,.45)  infinite;
+  animation:         bounce .5s cubic-bezier(.93,.09,.76,.45)  infinite alternate; */
+}
+
+#bat {
+  position: fixed;
+  top: 3em;
+  left: -10.5em;
+  -webkit-animation: hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  -moz-animation:    hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  -o-animation:      hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  animation:         hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+}
+
+.red {
+  fill:#D7172A;
+}
+
+.tan {
+  fill:#FFD87D;
+}
+
+.white {
+  fill:#ffffff;
+}
+
+
+
 @-webkit-keyframes bounce {
   0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
   25% { height: 3em; width: 3em; }
@@ -377,7 +377,8 @@ html, body {
   25% { height: 3em; width: 3em; }
   75% { height: 3em; width: 3em; }
   100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
-}  */
+} 
 
 
+  /* //sidebar */
   
