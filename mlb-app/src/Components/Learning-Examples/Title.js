@@ -11,11 +11,11 @@ function Title() {
     
   </div>
   <ul>
-    <li><a href="#"><span data-text="News">News</span></a></li>
-    <li><a href="#"><span data-text="Scores">Scores</span></a></li>
-    <li><a href="#"><span data-text="Standings">Standings</span></a></li>
-    <li><a href="#"><span data-text="Statistics">Statistics</span></a></li>
-    <li><a href="#"><span data-text="Fantasy">Fantasy Baseball</span></a></li>
+    <li><a href="https://github.com/lfabrizio/MLB-App"><span data-text="News">News</span></a></li>
+    <li><a href="https://www.mlb.com/scores"><span data-text="Scores">Scores</span></a></li>
+    <li><a href="https://www.mlb.com/standings"><span data-text="Standings">Standings</span></a></li>
+    <li><a href="https://www.baseball-reference.com/"><span data-text="Statistics">Statistics</span></a></li>
+    <li><a href="https://www.cbssports.com/fantasy/baseball/rankings/"><span data-text="Fantasy">Fantasy Baseball</span></a></li>
   </ul>
 </header>
 
