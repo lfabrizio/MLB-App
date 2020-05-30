@@ -5,7 +5,7 @@ export default class SecondComponent extends Component {
     render() {
     return (
       <div className="SecondComponent">
-        SecondComponent
+        SecondComponent implement the countdown 
       </div>
     );
   }
