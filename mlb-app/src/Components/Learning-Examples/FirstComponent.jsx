@@ -15,7 +15,9 @@ export default class FirstComponent extends Component {
     );
   }
     retrieveWelcomeMessage() {
-      HelloWorldService.executeHelloWorldService();
+      HelloWorldService.executeHelloWorld()
+      .then(response => console.log(response) )
+      //.catch()
     }
     
   }
