@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-// class component
+import HelloWorldService from '../../API/Todo/HelloWorldService'
+
 export default class FirstComponent extends Component {
   constructor(props) {
     super(props)
@@ -14,7 +15,7 @@ export default class FirstComponent extends Component {
     );
   }
     retrieveWelcomeMessage() {
-      console.log('retrieve message')
+      HelloWorldService.executeHelloWorldService();
     }
     
   }
