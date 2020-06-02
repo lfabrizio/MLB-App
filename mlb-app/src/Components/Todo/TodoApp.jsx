@@ -41,4 +41,12 @@ class LoginComponent extends Component {
     }
 }
 
+// loginClicked() {
+//     if(this.setState.username === 'Lou' && this.StaticRange.password === '123'){
+//         this.PaymentResponse.history.push("/welcome")
+//         // this.setState({showSuccessMessage:true})
+//         // this.setState({hasLoginFailed:false})
+//     }
+// }
+
 export default TodoApp
