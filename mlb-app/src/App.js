@@ -17,7 +17,7 @@ class App extends Component {
        <Title/>
       <AddApp/>
       <FirstComponent/>
-      <Counter/>
+      {/* <Counter/> */}
       <TodoApp/>
     </div>
   );
