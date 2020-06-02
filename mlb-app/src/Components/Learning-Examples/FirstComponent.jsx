@@ -12,13 +12,13 @@ class FirstComponent extends Component {
       <>
       <div className="firstComponent">
         
-        
       </div>
+     
       <div>
       <button onClick={this.retrieveWelcomeMessage}> Press Here</button>
       
         </div>
-      
+        
       </>
     )
   }

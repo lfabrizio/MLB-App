@@ -39,6 +39,7 @@ class LoginComponent extends Component {
         // this.handleUsernameChange = this.handleUsernameChange.bind(this)
         // this.handlePasswordChange = this.handlePasswordChange.bind(this)
         this.handleChange = this.handleChange.bind(this)
+        this.loginClicked = this.loginClicked.bind(this)
     }
 
     handleChange(event) {
@@ -49,9 +50,6 @@ class LoginComponent extends Component {
                 :event.target.value
                 })
     }
-
-
-
 
     // handleUsernameChange(event) {
     //     console.log(event.target.name);
@@ -67,13 +65,22 @@ class LoginComponent extends Component {
     //     this.setState({password:event.target.value})
     // }
 
+    loginClicked() {
+        if(this.state.username === 'lou' && this.state.password==='123')
+        console.log('Successful')
+        else
+            console.log('Failed')
+        // console.log(this.state)
+    }
 
     render() {
         return (
             <div>
+                <div>Invalid Credentials</div>
+                <div>Login Successful</div>
             User Name : <input type="text" name="username" value={this.state.username} onChange={this.handleChange}/>
             Password : <input type="password" name="password" value={this.state.password} onChange={this.handleChange}/>
-            <button>Login</button>
+            <button onClick={this.loginClicked}>Login</button>
             </div>
         )
     }
