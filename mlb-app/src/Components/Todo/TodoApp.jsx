@@ -34,7 +34,9 @@ class LoginComponent extends Component {
         super(props)
         this.state = {
             username: 'lou',
-            password: ''
+            password: '',
+            hasLoginFailed: false,
+            showSuccessMessage: false
         }
         // this.handleUsernameChange = this.handleUsernameChange.bind(this)
         // this.handlePasswordChange = this.handlePasswordChange.bind(this)
@@ -43,7 +45,7 @@ class LoginComponent extends Component {
     }
 
     handleChange(event) {
-        console.log(this.state);
+        // console.log(this.state);
         this.setState(
             {
                 [event.target.name]
@@ -66,18 +68,25 @@ class LoginComponent extends Component {
     // }
 
     loginClicked() {
-        if(this.state.username === 'lou' && this.state.password==='123')
-        console.log('Successful')
-        else
-            console.log('Failed')
+        if(this.state.username === 'lou' && this.state.password==='123') {
+            console.log('Successful')
+            this.setState({showSuccessMessage:true})
+            this.setState({hasLoginFailed:false})
+        }
+        
+        else {
+            this.setState({showSuccessMessage:false})
+            this.setState({hasLoginFailed:true})
+        }
+            
         // console.log(this.state)
     }
 
     render() {
         return (
             <div>
-                <div>Invalid Credentials</div>
-                <div>Login Successful</div>
+                <ShowInvalidCredentials hasLoginFailed={this.state.hasLoginFailed}/>
+                <ShowLoginSuccessMessage showSuccessMessage={this.state.showSuccessMessage}/>
             User Name : <input type="text" name="username" value={this.state.username} onChange={this.handleChange}/>
             Password : <input type="password" name="password" value={this.state.password} onChange={this.handleChange}/>
             <button onClick={this.loginClicked}>Login</button>
@@ -85,13 +94,19 @@ class LoginComponent extends Component {
         )
     }
 }
+function ShowInvalidCredentials(props) {
+    if(props.hasLoginFailed) {
+        return <div>Invalid Credentials</div>
+    }
+    return null;
+}
 
-// loginClicked() {
-//     if(this.setState.username === 'Lou' && this.StaticRange.password === '123'){
-//         this.PaymentResponse.history.push("/welcome")
-//         // this.setState({showSuccessMessage:true})
-//         // this.setState({hasLoginFailed:false})
-//     }
-// }
+function ShowLoginSuccessMessage(props) {
+    if(props.showSuccessMessage) {
+        return <div>Login Successful</div>
+    }
+    return null
+}
+
 
 export default TodoApp
