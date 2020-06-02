@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HelloWorldService from '../../API/Todo/HelloWorldService'
 
-export default class WelcomeComponent extends Component {
+class FirstComponent extends Component {
   constructor(props) {
     super(props)
     this.retrieveWelcomeMessage = this.retrieveWelcomeMessage.bind(this)
@@ -38,3 +38,4 @@ export default class WelcomeComponent extends Component {
     }
     }
   
+export default FirstComponent;
