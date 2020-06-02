@@ -4,7 +4,7 @@ class AddApp extends Component {
     render() {
         return (
             <div className="AddApp">
-                <LoginComponent/>
+                {/* <LoginComponent/> */}
                 <FieldComponent/>
             </div>
         )

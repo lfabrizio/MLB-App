@@ -16,10 +16,14 @@ class App extends Component {
     <div className="App">
        <Title/>
       <AddApp/>
-      <FirstComponent/>
+      
       {/* <Counter/> */}
       <TodoApp/>
+      
+      <FirstComponent/>
     </div>
+    
+    
   );
 }
 }
