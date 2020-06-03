@@ -9,8 +9,8 @@ class TodoApp extends Component {
             <Router>
                 <>
                 <Route path="./" exact component={LoginComponent}/>
-                <Route path="./login" component={LoginComponent}/>
-                <Route path="/welcome" component={FirstComponent}/>
+                <Route path="./Welcome" component={WelcomeComponent}/>
+                <Route path="/FirstComponent" component={FirstComponent}/>
                 </>
                 </Router>     
                  <LoginComponent/>
@@ -22,7 +22,7 @@ class TodoApp extends Component {
 
 class WelcomeComponent extends Component {
     render() {
-        return <div>Welcome</div>
+        return <div> Coming Soon</div>
     }
 }
 
