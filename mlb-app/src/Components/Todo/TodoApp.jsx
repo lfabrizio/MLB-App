@@ -8,30 +8,21 @@ class TodoApp extends Component {
             <div className="TodoApp">  
             <Router>
                 <>
-                <HeaderComponent/>
+                {/* <HeaderComponent/> */}
                 <Switch>
                 <Route path="./" exact component={LoginComponent}/>
                 <Route path="./Welcome/:name" component={WelcomeComponent}/>
                 <Route path="/FirstComponent" component={FirstComponent}/>
                 <Route path="/todos" component={ListTodosComponent}/>
+                <Route path="/logout" component={LogoutComponent}/>
                 {/* <Route component={ErrorComponent}/> */}
                 </Switch>
-                <FooterComponent/>
+                {/* <FooterComponent/> */}
                 </>
                 </Router>     
                  <LoginComponent/>
                  <WelcomeComponent/>
                  {/* <ListTodosComponent/> */}
-            </div>
-        )
-    }
-}
-
-class FooterComponent extends Component {
-    render() {
-        return (
-            <div>
-             <hr/> Footer
             </div>
         )
     }
@@ -47,6 +38,31 @@ class HeaderComponent extends Component {
         )
     }
 }
+
+class FooterComponent extends Component {
+    render() {
+        return (
+            <footer className="footer">
+                <span className="text-muted">Copyright 2020</span>
+
+            </footer>
+        )
+    }
+}
+
+class LogoutComponent extends Component {
+    render() {
+        return (
+            <>
+             <h1>you are logged out</h1> 
+             <div className="container">
+                 Thank you for using our application
+             </div>
+            </>
+        )
+    }
+}
+
 
 
 class ListTodosComponent extends Component {
