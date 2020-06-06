@@ -27,10 +27,43 @@ class TodoApp extends Component {
 
 class ListTodosComponent extends Component {
     constructor(props){
-        
+        super(props)
+        this.state = {
+            todos :
+                [
+             {id: 1 , desription : 'Learn SQL'},
+             {id: 2 , desription : 'Become Expert in React'},
+             {id: 3 , desription : 'Visit Vegas'}
+                ]
+        }
     }
     render() {
-        return <div> Coming List</div>
+        return  (
+            <div> 
+            <h1>List Todos</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        this.state.todos.map (
+                            todo => 
+                            <tr>
+                            <td>{todo.id}</td>
+                            <td>{todo.desription}</td>
+                        </tr>
+                        )
+                   
+                    }
+                </tbody>
+
+            </table>
+            </div>
+        )
     }
 }
 class WelcomeComponent extends Component {
