@@ -12,6 +12,7 @@ class TodoApp extends Component {
                 <Route path="./" exact component={LoginComponent}/>
                 <Route path="./Welcome/:name" component={WelcomeComponent}/>
                 <Route path="/FirstComponent" component={FirstComponent}/>
+                <Route path="/todos" component={ListTodosComponent}/>
                 {/* <Route component={ErrorComponent}/> */}
                 </Switch>
                 </>
@@ -23,11 +24,20 @@ class TodoApp extends Component {
     }
 }
 
-class WelcomeComponent extends Component {
+
+class ListTodosComponent extends Component {
+    constructor(props){
+        
+    }
     render() {
-        return <div> Coming Soon{this.props.match.params.name}</div>
+        return <div> Coming List</div>
     }
 }
+class WelcomeComponent extends Component {
+    render() {
+         return <div> Coming Soon</div> // not working{this.props.match.params.name}
+     }
+ }
 
 function ErrorComponent() {
     return <div>error occurred</div>
