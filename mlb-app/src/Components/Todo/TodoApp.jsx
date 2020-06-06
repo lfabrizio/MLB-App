@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
+import AuthenticationService from './AuthenticationService.js'
 import FirstComponent from '../Learning-Examples/FirstComponent'
 
 class TodoApp extends Component {
@@ -124,7 +125,6 @@ function ErrorComponent() {
 
 
 
-
 class LoginComponent extends Component {
     constructor(props) {
         super(props)
@@ -165,6 +165,7 @@ class LoginComponent extends Component {
 
     loginClicked() {
         if(this.state.username === 'lou' && this.state.password==='123') {
+            AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.password);
             // this.props.history.push(`/welcome/${this.state.username}`)
             this.setState({showSuccessMessage:true})
            this.setState({hasLoginFailed:false})
