@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 import FirstComponent from '../Learning-Examples/FirstComponent'
 
 class TodoApp extends Component {
@@ -31,9 +31,9 @@ class ListTodosComponent extends Component {
         this.state = {
             todos :
                 [
-             {id: 1 , desription : 'Learn SQL'},
-             {id: 2 , desription : 'Become Expert in React'},
-             {id: 3 , desription : 'Visit Vegas'}
+             {id: 1 , desription : 'Learn SQL', done: false, targetDate: new Date()},
+             {id: 2 , desription : 'Become Expert in React', done: false, targetDate: new Date()},
+             {id: 3 , desription : 'Visit Vegas', done: false, targetDate: new Date()}
                 ]
         }
     }
@@ -46,6 +46,8 @@ class ListTodosComponent extends Component {
                     <tr>
                         <th>id</th>
                         <th>description</th>
+                        <th>Target Date </th>
+                        <th>is Completed </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,9 +55,11 @@ class ListTodosComponent extends Component {
                         this.state.todos.map (
                             todo => 
                             <tr>
-                            <td>{todo.id}</td>
-                            <td>{todo.desription}</td>
-                        </tr>
+                                <td>{todo.id}</td>
+                                <td>{todo.desription}</td>
+                                <td>{todo.done.toString()}</td>
+                                <td>{todo.targetDate.toString()}</td>
+                            </tr>
                         )
                    
                     }
@@ -68,7 +72,9 @@ class ListTodosComponent extends Component {
 }
 class WelcomeComponent extends Component {
     render() {
-         return <div> Coming Soon</div> // not working{this.props.match.params.name}
+         return <div> Coming Soon< {this.props.match.params.name} You can manage your todos here <Link to="/todos">here
+         </Link> 
+         </div> 
      }
  }
 
