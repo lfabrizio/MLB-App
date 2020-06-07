@@ -2,9 +2,12 @@ import React, { Component } from 'react'
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 import AuthenticationService from './AuthenticationService.js'
 import AuthenticatedRoute from './AuthenticatedRoute.jsx'
+import WelcomeComponent from './WelcomeComponent.jsx'
 import LoginComponent from './LoginComponent.jsx'
 import ListTodosComponent from './ListTodosComponents.jsx'
-
+import HeaderComponent from './HeaderComponent.jsx'
+import ErrorComponent from './ErrorComponent.jsx'
+import LogoutComponent from './LogoutComponent'
 
 class TodoApp extends Component {
     render() {
@@ -28,63 +31,6 @@ class TodoApp extends Component {
     }
 }
 
-class HeaderComponent extends Component {
-    render() {
-    const isUserLoggedIn = AuthenticationService.isUserLoggedIn();
-    //console.log(isUserLoggedIn);
-
-        return (
-            <div>
-                Header <hr/>
-            </div>
-        )
-    }
-}
-
-class FooterComponent extends Component {
-    render() {
-        return (
-            <footer className="footer">
-                <span className="text-muted">Copyright 2020</span>
-
-            </footer>
-        )
-    }
-}
-
-
-
-
-
-
-
-
-class WelcomeComponent extends Component {
-    render() {
-        return <div>
-            Welcome {this.props.match.params.name}! You can manage your todos <Link to="/todos">here</Link>
-            </div>
-    }
-}
-
-class LogoutComponent extends Component {
-    render() {
-        return (
-            <>
-             <h1>you are logged out</h1> 
-             <div className="container">
-                 Thank you for using our application
-             </div>
-            </>
-        )
-    }
-}
-
-// function ErrorComponent() {
-//     return <div>An Error Occured. Contact support at (555)555-5555</div>
-// }
-
-//Login Component
 
 
 
