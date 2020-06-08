@@ -11,18 +11,18 @@ class AddApp extends Component {
     }
 }
 
-class LoginComponent extends Component {
-    render() {
-        return (
-            <div id="content">
-            User Name:  <input type="text" name="username"/>
-            Password:  <input type="password" name="password"/>
+// class LoginComponent extends Component {
+//     render() {
+//         return (
+//             <div id="content">
+//             User Name:  <input type="text" name="username"/>
+//             Password:  <input type="password" name="password"/>
             
             
-            </div>
-        )
-    }
-}
+//             </div>
+//         )
+//     }
+// }
 
 class FieldComponent extends Component {
     render() {

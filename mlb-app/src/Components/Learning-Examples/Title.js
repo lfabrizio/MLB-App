@@ -5,9 +5,9 @@ import './Title.css';
 function Title() {
   return (
 <header>
-  <div class="container">
+  <div className="container">
 
-    <p class="main">MLB ⚾ APP</p>
+    <p className="main">MLB ⚾ APP</p>
     
   </div>
   <ul>

@@ -31,9 +31,6 @@ class TodoApp extends Component {
     }
 }
 
-
-
-
 // function ShowInvalidCredentials(props) {
 //       if(props.hasLoginFailed) {
 //           return <div>Invalid Credentials</div>
