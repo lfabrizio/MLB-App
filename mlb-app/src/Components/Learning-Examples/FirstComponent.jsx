@@ -23,21 +23,21 @@ class FirstComponent extends Component {
       </>
     )
   }
-    retrieveWelcomeMessage() {
-       HelloWorldService.executeHelloWorld()
-       .then((response) => this.handleSuccessfulResponse(response) )
-      //.catch()
-
-    //   HelloWorldService.executeHelloWorldBeanService()
-    //   .then(response => this.handleSuccessfulResponse(response) )
+    // retrieveWelcomeMessage() {
+    //    HelloWorldService.executeHelloWorld()
+    //    .then((response) => this.handleSuccessfulResponse(response) )
     //   //.catch()
-     }
 
-    handleSuccessfulResponse(response) {
-      console.log(response)
-      this.setState({ welcomeMessage : response.data.message})
+    // //   HelloWorldService.executeHelloWorldBeanService()
+    // //   .then(response => this.handleSuccessfulResponse(response) )
+    // //   //.catch()
+    //  }
+
+    // handleSuccessfulResponse(response) {
+    //   console.log(response)
+    //   this.setState({ welcomeMessage : response.data.message})
      
-    }
+    // }
     }
   
 export default FirstComponent;

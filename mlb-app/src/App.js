@@ -9,18 +9,20 @@ import TodoApp from './Components/Todo/TodoApp'
 import logo from './logo.svg';
 import './App.css';
 import './bootstrap.css';
+import WelcomeComponent from './Components/Todo/WelcomeComponent';
+import LoginComponent from './Components/Todo/LoginComponent';
 
 class App extends Component {
   render() {
   return (
     <div className="App">
-       <Title/>
+       <Title/> 
       <AddApp/>
-      
+      <LoginComponent/>
+      <WelcomeComponent/>  
       {/* <Counter/> */}
-      <TodoApp/>
-      
-      <FirstComponent/>
+       {/* <TodoApp/>  */}
+ {/* <FirstComponent/>   */}
     </div>
     
     
@@ -30,18 +32,18 @@ class App extends Component {
 
 
 
-class LearningComponents extends Component {
-  render() {
-    return (
-      <div className="LearningComponents">
-        MLB APP
-        <FirstComponent></FirstComponent>
-        <SecondComponent></SecondComponent>
-        <ThirdComponent></ThirdComponent>
-      </div>
-    );
-  } 
-}
+// class LearningComponents extends Component {
+//   render() {
+//     return (
+//       <div className="LearningComponents">
+//         MLB APP
+//         <FirstComponent></FirstComponent>
+//         <SecondComponent></SecondComponent>
+//         <ThirdComponent></ThirdComponent>
+//       </div>
+//     );
+//   } 
+// }
 
 
 
