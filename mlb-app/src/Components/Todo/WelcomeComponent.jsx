@@ -8,6 +8,7 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
         this.state={welcomeMessage:''}
         this.retrieveWelcomeMessage = this.retrieveWelcomeMessage.bind(this)
         this.handleSuccessfulResponse = this.handleSuccessfulResponse.bind(this);
+        this.handleError = this.handleError.bind(this);
     }
     render() {
         return (
@@ -34,7 +35,7 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
 
         // HelloWorldService.executeHelloWorldPathVariableService(name)
         // .then( response => this.handleSuccessfulResponse(response) )
-        // //.catch()
+        // //.catch(error => this.handleError(error))
     }
 
 
@@ -44,6 +45,13 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
       this.setState({ welcomeMessage : response.data.message})
      
     }
+
+    handleError(error) {
+        console.log(error)
+        
+       
+      }
+
  }
 
 export default WelcomeComponent
