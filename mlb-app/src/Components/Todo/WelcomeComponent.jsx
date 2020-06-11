@@ -15,13 +15,13 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
             <h1>Welcome</h1>
          <div className="container">
             Welcome 
-             You
+             
             </div>
-            <div className="container">
+            <div className="message">
                 click for customized message
                 {/* manage todos <Link to="/todos">here</Link> */}
                 <button onClick={this.retrieveWelcomeMessage}>Get Message</button>
-                <div className="container"> {this.state.welcomeMessage}</div>
+                <div className="message"> {this.state.welcomeMessage}</div>
             </div>
             </>
         )
