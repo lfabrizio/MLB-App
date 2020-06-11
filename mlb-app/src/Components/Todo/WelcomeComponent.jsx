@@ -31,6 +31,10 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
         HelloWorldService.executeHelloWorldBean()
         .then( response => this.handleSuccessfulResponse(response) )
         //.catch()
+
+        // HelloWorldService.executeHelloWorldPathVariableService(name)
+        // .then( response => this.handleSuccessfulResponse(response) )
+        // //.catch()
     }
 
 
