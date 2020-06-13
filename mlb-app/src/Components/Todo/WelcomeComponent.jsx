@@ -16,7 +16,7 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
             {/* <h1>Welcome</h1> */}
          <div className="container">
             {/* Welcome  */}
-             
+             {this.props.match.params.name}
             </div>
             <div className="message">
                 Click for Customized Message
@@ -29,13 +29,13 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
     }
 
     retrieveWelcomeMessage(){
-        HelloWorldService.executeHelloWorldBean()
-        .then( response => this.handleSuccessfulResponse(response) )
-        //.catch()
-
-        // HelloWorldService.executeHelloWorldPathVariableService(name)
+        // HelloWorldService.executeHelloWorldBean()
         // .then( response => this.handleSuccessfulResponse(response) )
-        // //.catch(error => this.handleError(error.response))
+        // //.catch()
+
+        HelloWorldService.executeHelloWorldPathVariableService(this.props.match.params.name)
+        .then( response => this.handleSuccessfulResponse(response) )
+        //.catch(error => this.handleError(error.response))
     }
 
 
