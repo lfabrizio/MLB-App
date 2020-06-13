@@ -19,9 +19,9 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
              
             </div>
             <div className="message">
-                click for customized message
+                Click for Customized Message
                 {/* manage todos <Link to="/todos">here</Link> */}
-                <button onClick={this.retrieveWelcomeMessage}>Get Message</button>
+                <button onClick={this.retrieveWelcomeMessage}> Message</button>
                 <div className="message"> {this.state.welcomeMessage}</div>
             </div>
             </>
@@ -35,7 +35,7 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
 
         // HelloWorldService.executeHelloWorldPathVariableService(name)
         // .then( response => this.handleSuccessfulResponse(response) )
-        // //.catch(error => this.handleError(error))
+        // //.catch(error => this.handleError(error.response))
     }
 
 
@@ -47,7 +47,8 @@ import HelloWorldService from '../../API/Todo/HelloWorldService.js'
     }
 
     handleError(error) {
-        console.log(error)
+        console.log(error.response)
+        this.setState({welcomeMessage: error.response.data.message})
         
        
       }
