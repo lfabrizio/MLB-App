@@ -12,6 +12,19 @@ class ListTodosComponent extends Component {
         }
     }
 
+
+    componentWillUnmount() {
+        console.log('componentWillUnmount')
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('shouldComponentUpdate')
+        console.log(nextProps)
+        console.log(nextState)
+
+    }
+
+
     componentDidMount() {
         let username = AuthenticationService.getLoggedInUserName();
         TodoDataService.retrieveAllTodos(username)
@@ -21,6 +34,7 @@ class ListTodosComponent extends Component {
                 this.setState({todos : response.data})
             }
         )
+        console.log(this.state)
     }
     render() {
         return <div>
