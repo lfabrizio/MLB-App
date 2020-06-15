@@ -21,6 +21,7 @@ class ListTodosComponent extends Component {
         console.log('shouldComponentUpdate')
         console.log(nextProps)
         console.log(nextState)
+        return true;
 
     }
 
