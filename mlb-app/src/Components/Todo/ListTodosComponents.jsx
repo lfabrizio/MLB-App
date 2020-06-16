@@ -6,11 +6,11 @@ class ListTodosComponent extends Component {
     constructor(props){
         super(props)
         this.state = {
-            todos: 
-            [
-            ]
+            todos: [],
+            message : null
         }
         this.deleteTodoClicked = this.deleteTodoClicked.bind(this)
+        this.refreshTodos = this.deleteTodoClicked.bind(this)
     }
 
 
@@ -28,24 +28,40 @@ class ListTodosComponent extends Component {
 
 
     componentDidMount() {
-        let username = AuthenticationService.getLoggedInUserName();
-        TodoDataService.retrieveAllTodos(username)
-        .then(
-            response => {
-                // console.log(response)
-                this.setState({todos : response.data})
-            }
-        )
+       this.refreshTodos();
         console.log(this.state)
     }
 
+
+refreshTodos() {
+    let username = AuthenticationService.getLoggedInUserName();
+    TodoDataService.retrieveAllTodos(username)
+    .then(
+        response => {
+            // console.log(response)
+            this.setState({todos : response.data})
+        }
+    )
+}
+
+
     deleteTodoClicked(id) {
         let username = AuthenticationService.getLoggedInUserName();
-        console.log(id + " " + username);
+        // console.log(id + " " + username);
+        TodoDataService.deleteTodo(username, id)
+        .then(
+            response => {
+                this.setState({message : `Delete of todo ${id} successful`});
+                this.refreshTodos();
+            }
+        )
     }
+
+
     render() {
         return <div>
             <h1>List Todos</h1>
+           {this.state.mesage && <div className="alert alert-success">{this.state.message}</div>}
             <table>
                 <thead>
                     <tr>
