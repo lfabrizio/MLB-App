@@ -48,6 +48,7 @@ refreshTodos() {
 
     updateTodoClicked(id) {
         console.log('update' + id)
+        this.props.history.push(`/todos/${id}`)
         // let username = AuthenticationService.getLoggedInUserName();
         // // console.log(id + " " + username);
         // TodoDataService.deleteTodo(username, id)
