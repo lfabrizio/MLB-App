@@ -1,17 +1,25 @@
 import React, {Component} from 'react'
+import moment from 'moment'
+import { Formik } from 'formik';
 
 class TodoComponent extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            id : 1,
+            id : this.props.match.params.id,
             desription : 'Learn forms',
-            targetDate : new Date()
+            targetDate : moment (new Date()).format('YYYY-MM-DD')
         }
     }
     render() {
         return <div>
-            Todo Component for id - {this.props.match.params.id} </div>
+            <H1>Todo</H1>
+            <div class="container">
+                <Formik>
+
+                </Formik>
+            </div>
+            </div>
     }
 }
 
