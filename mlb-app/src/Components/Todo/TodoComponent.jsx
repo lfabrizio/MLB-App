@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import moment from 'moment'
-import { Formik } from 'formik';
+import { Formik, Form, Field } from 'formik';
 
 class TodoComponent extends Component {
     constructor(props) {
@@ -12,14 +12,30 @@ class TodoComponent extends Component {
         }
     }
     render() {
-        return <div>
-            <H1>Todo</H1>
-            <div class="container">
+        return (
+             <div>
+            <h1>Todo</h1>
+            <div className="container">
                 <Formik>
-
+                    {
+                        (props) => (
+                            <Form>
+                                <fieldset className="form-group">
+                                    <label>Description</label>
+                                    <Field className="form-control" type="text" name="description"/>
+                                </fieldset>
+                                <fieldset className="form-group">
+                                    <label>Target Date</label>
+                                    <Field className="form-control" type="date" name="targetDate"/>
+                                </fieldset>
+                                <button className="btn btn-succ" type="submit"> Save </button>
+                            </Form>
+                        )
+                    }
                 </Formik>
             </div>
             </div>
+        )
     }
 }
 
