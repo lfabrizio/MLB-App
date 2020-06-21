@@ -23,6 +23,10 @@ class TodoDataService {
         return axios.get(`http://localhost:8080/users/${name}/todos/${id}`); 
     }
 
+    createTodo(name, todo) {
+        //console.log('executed service')
+        return axios.post(`http://localhost:8080/users/${name}/todos/`, todo); 
+    }
 
 }
 
