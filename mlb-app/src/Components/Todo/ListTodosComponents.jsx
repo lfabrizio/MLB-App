@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import TodoDataService from '../../API/Todo/TodoDataService.js'
 import AuthenticationService from './AuthenticationService.js'
+import moment from 'moment'
 
 class ListTodosComponent extends Component {
     constructor(props){
@@ -94,7 +95,7 @@ refreshTodos() {
                     <td>{todo.id}</td>
                     <td>{todo.description}</td>
                     <td>{todo.done.toString()}</td>
-                    <td>{todo.targetDate.toString()}</td>
+                    <td>{moment(todo.targetDate).format('YYYY-MM-DD')}</td>
                     <td><button className="btn btn-success" onCLick={() => this.updateTodoClicked(todo.id)}> Update</button></td>
                     <td><button className="btn btn-warning" onCLick={() => this.deleteTodoClicked(todo.id)}> Delete</button></td>
                     </tr>
