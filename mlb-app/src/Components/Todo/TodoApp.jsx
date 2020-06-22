@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
-import AuthenticationService from './AuthenticationService.js'
+// import AuthenticationService from './AuthenticationService.js'
 import AuthenticatedRoute from './AuthenticatedRoute.jsx'
 import WelcomeComponent from './WelcomeComponent.jsx'
 import LoginComponent from './LoginComponent.jsx'
 import ListTodosComponent from './ListTodosComponents.jsx'
-import HeaderComponent from './HeaderComponent.jsx'
-import ErrorComponent from './ErrorComponent.jsx'
-import LogoutComponent from './LogoutComponent.jsx'
+// import HeaderComponent from './HeaderComponent.jsx'
+// import ErrorComponent from './ErrorComponent.jsx'
+// import LogoutComponent from './LogoutComponent.jsx'
 import TodoComponent from './TodoComponent.jsx'
+import MlbComponent from './MlbComponent.jsx'
 
 class TodoApp extends Component {
     render() {
@@ -18,8 +19,9 @@ class TodoApp extends Component {
                     <Switch>
                     <Route path="/" exact component={LoginComponent} />
                     <Route path="/login" component={LoginComponent} />
-                    <AuthenticatedRoute path="/welcome/:name" component={WelcomeComponent} />
-                    {/* <AuthenticatedRoute path="/todos/:id" component={TodoComponent} /> */}
+                    <Route path="/mlb" component={MlbComponent} />
+                    <AuthenticatedRoute path="/welcome" component={WelcomeComponent} />
+                    <AuthenticatedRoute path="/todos/:id" component={TodoComponent} />
                     <AuthenticatedRoute path="/todos" component={ListTodosComponent} />
                     
                     {/* <Route component={ErrorComponent}/> */}

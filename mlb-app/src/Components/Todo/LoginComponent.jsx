@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+// import {BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import AuthenticationService from './AuthenticationService.js'
 
 class LoginComponent extends Component {
@@ -34,11 +35,11 @@ class LoginComponent extends Component {
     loginClicked() {
         if(this.state.username === "lou" && this.state.password=== "123"){
             
-            AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.password);
+            AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.pasword);
             // this will re-route to welcome landing page if done correctly
-            this.props.history.push("./")
-            this.setState({showSuccessMessage:true})
-            this.setState({hasLoginFailed:false})
+            this.props.history.push(`/welcome/${this.state.username}`);
+            // this.setState({showSuccessMessage:true})
+            // this.setState({hasLoginFailed:false})
         }
         else {
             this.setState({showSuccessMessage:false})
@@ -54,7 +55,7 @@ class LoginComponent extends Component {
                 {/* <ShowInvalidCredentials hasLoginFailed={this.state.hasLoginFailed}/> */}
                 {this.state.hasLoginFailed && <div>Invalid Credentials</div>}
                 {this.state.showSuccessMessage && <div>Login Successful!</div>}
-                {/* <ShowLoginSuccessMessage showSuccessMessage={this.state.showSuccessMessage}/> */}
+                 {/* <ShowLoginSuccessMessage showSuccessMessage={this.state.showSuccessMessage}/> */}
             User Name: <input type="text" name="username" value={this.state.username} onChange={this.handleChange}/>
             Password: <input type="password" name="password" value={this.state.password} onChange={this.handleChange}/>
             <button onClick={this.loginClicked}>Login</button>
