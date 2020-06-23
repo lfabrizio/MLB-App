@@ -37,7 +37,7 @@ import '../Learning-Examples/Title.css'
       // BREAKING //
     </span> 
     <a class="breaking-news-headline delay-animated2 fadein marquee">
-      FIFA president says he'll resign amid corruption scandal
+      MLB and MLBPA Reach Tentative Agreement: Players to Report on July 1st
     </a>  
 </div>  
 
