@@ -17,8 +17,8 @@ import '../Learning-Examples/Title.css'
             <>
             <header>
   <div className="container">
-
-    <p className="main">MLB ⚾ APP</p>
+  
+    <h2 className="main">MLB ⚾ APP</h2>
     
   </div>
   <ul>
@@ -29,6 +29,20 @@ import '../Learning-Examples/Title.css'
     <li><a href="https://www.cbssports.com/fantasy/baseball/rankings/"><span data-text="Fantasy">Fantasy Baseball</span></a></li>
   </ul>
 </header>
+<div id="breaking-news-container">
+  <div id="breaking-news-colour" class="slideup animated">
+    
+  </div>  
+   <span class="breaking-news-title delay-animated slidein">
+      // BREAKING //
+    </span> 
+    <a class="breaking-news-headline delay-animated2 fadein marquee">
+      FIFA president says he'll resign amid corruption scandal
+    </a>  
+</div>  
+
+
+
             {/* <h1>Welcome</h1> */}
          <div className="container">
             {/* Welcome  */}
