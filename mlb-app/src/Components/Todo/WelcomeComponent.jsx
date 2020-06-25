@@ -16,6 +16,13 @@ import '../Learning-Examples/Title.css'
         return (
             <>
             <header>
+        
+
+<div class="breaking_news">
+  <div class="label ripple">Breaking News</div>
+  <div class="news_title">MLB and MLBPA Reach Agreement: Players to report on July 1st</div>
+</div>
+            
   <div className="container">
   
     <h2 className="main">MLB ⚾ APP</h2>
@@ -29,17 +36,12 @@ import '../Learning-Examples/Title.css'
     <li><a href="https://www.cbssports.com/fantasy/baseball/rankings/"><span data-text="Fantasy">Fantasy Baseball</span></a></li>
   </ul>
 </header>
-<div id="breaking-news-container">
-  <div id="breaking-news-colour" class="slideup animated">
-    
-  </div>  
-   <span class="breaking-news-title delay-animated slidein">
-      // BREAKING //
-    </span> 
-    <a class="breaking-news-headline delay-animated2 fadein marquee">
-      MLB and MLBPA Reach Tentative Agreement: Players to Report on July 1st
-    </a>  
-</div>  
+
+
+
+
+
+
 
 
 
