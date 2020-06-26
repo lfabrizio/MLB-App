@@ -1,6 +1,4 @@
 
-
-
   body {
     background-color: rgb(66, 80, 4);
     height: 95vh;
@@ -158,7 +156,7 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-/* #ball {
+#ball {
   position: fixed;
   top: 3em;
   width: 3em;
@@ -168,7 +166,7 @@ html, body {
   -moz-animation:    bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
   -o-animation:      bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
   animation:         bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
-} */
+}
 
 #bat {
   position: fixed;
@@ -211,7 +209,7 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-/* #ball {
+#ball {
   position: fixed;
   top: 3em;
   width: 3em;
@@ -221,7 +219,7 @@ html, body {
   -moz-animation:    bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
   -o-animation:      bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
   animation:         bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
-} */
+}
 
 #bat {
   position: fixed;
@@ -325,7 +323,6 @@ html, body {
 .white {
   fill:#ffffff;
 }
-
 
 
 @-webkit-keyframes bounce {
