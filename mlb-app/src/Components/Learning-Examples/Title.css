@@ -259,48 +259,9 @@ html, body {
   100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
 }
 
-@-o-keyframes bounce {
-  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
-  25% { height: 3em; width: 3em; }
-  75% { height: 3em; width: 3em; }
-  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); } 
- }
 
-@keyframes bounce {
-  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
-  25% { height: 3em; width: 3em; }
-  75% { height: 3em; width: 3em; }
-  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
-} html, body {
-  background: repeating-linear-gradient(120deg,
-  #236533,
-  #236533 127px,
-  #1a5127 127px,
-  #1a5127 260px);
-  height: 100%;
-  padding: 0;
-  margin: 0;
-} */
 
-/* .loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-} */
 
-#ball {
-  position: fixed;
-  top: 3em;
-  width: 3em;
-  height: 3em;
-  left: 6em;
-  /* -webkit-animation: bounce .5s cubic-bezier(.93,.09,.76,.45) infinite;
-  -moz-animation:    bounce .5s cubic-bezier(.93,.09,.76,.45)  infinite;
-  -o-animation:      bounce .5s cubic-bezier(.93,.09,.76,.45)  infinite;
-  animation:         bounce .5s cubic-bezier(.93,.09,.76,.45)  infinite alternate; */
-}
 
 #bat {
   position: fixed;
