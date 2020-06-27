@@ -10,7 +10,7 @@ function Title() {
     <p className="main">MLB ⚾ APP</p>
     
   </div>
-  <ul>
+  {/* <ul>
     <li><a href="https://github.com/lfabrizio/MLB-App"><span data-text="News">News</span></a></li>
     <li><a href="https://www.mlb.com/scores"><span data-text="Scores">Scores</span></a></li>
     <li><a href="https://www.mlb.com/standings"><span data-text="Standings">Standings</span></a></li>
@@ -19,7 +19,7 @@ function Title() {
   </ul>
 </header>
 
-  )}
+  )} */}
 
 
 
