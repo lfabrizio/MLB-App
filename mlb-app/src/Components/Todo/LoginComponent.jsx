@@ -18,6 +18,7 @@ class LoginComponent extends Component {
         this.loginClicked = this.loginClicked.bind(this)
     }
 
+        
    
 
     handleChange(event) {
@@ -51,6 +52,7 @@ class LoginComponent extends Component {
 
     render() {
         return (
+
             <div>
                 {/* <ShowInvalidCredentials hasLoginFailed={this.state.hasLoginFailed}/> */}
                 {this.state.hasLoginFailed && <div>Invalid Credentials</div>}
@@ -59,9 +61,11 @@ class LoginComponent extends Component {
             User Name: <input type="text" name="username" value={this.state.username} onChange={this.handleChange}/>
             Password: <input type="password" name="password" value={this.state.password} onChange={this.handleChange}/>
             <button onClick={this.loginClicked}>Login</button>
+            <img src="http://content.sportslogos.net/logos/4/490/full/1986.gif" class="mlb"></img>
            </div>
         )
     }
+    
 
 }
 

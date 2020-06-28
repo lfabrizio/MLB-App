@@ -67,6 +67,7 @@ class MlbComponent extends Component {
            )
     }
       </div>
+      
     );
   }
   }

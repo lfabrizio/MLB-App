@@ -416,4 +416,8 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
   animation: ripple 1.5s ease-out  infinite;
 }
 
-
+.mlb {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
