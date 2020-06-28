@@ -11,6 +11,7 @@ class MlbComponent extends Component {
 
         this.handleChange = this.handleChange.bind(this)
         this.buttonClick = this.buttonClick.bind(this)
+
     }
 
     handleChange(event) {
@@ -62,11 +63,14 @@ class MlbComponent extends Component {
            this.state.output === '' ? <p> Stats</p> : 
            this.state.output.map((search_player_all) =>
            <div class="row">
-           s
+           
          </div>
            )
     }
       </div>
+      
+        
+      
       
     );
   }

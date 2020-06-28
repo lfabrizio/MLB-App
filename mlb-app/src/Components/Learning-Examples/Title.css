@@ -416,8 +416,36 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
   animation: ripple 1.5s ease-out  infinite;
 }
 
-.mlb {
-  width: 300px;
-  display: block;
-  margin: 0 auto;
-}
+
+.logging {
+  display: flex;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(230, 9, 9);
+  font-weight: bold;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+     text-align:center;
+    position:absolute;
+    top:50%;
+    width:450px;
+    color:aliceblue;
+    padding:50px;
+    height:auto;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    margin: 15px 0;
+    outline: none;
+    padding: 15px 12px;
+    color:aliceblue;
+    border:none;
+    border-radius:px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.7) ,-5px -5px 10px rgba(255,255,255,0.1);
+    background:transparent;
+  }
+  
+  
+  
+
