@@ -81,7 +81,13 @@ import '../Learning-Examples/Title.css'
     handleError(error) {
         console.log(error.response)
         let errorMessage ='';
-        this.setState({welcomeMessage: error.response.data.message})
+        if(error.message)
+          errorMessage += error.message
+
+          if(error.response && error.response.data){
+            errorMessage += error.response.data.message
+          }
+        this.setState({welcomeMessage: error.message})
         
        
       }
