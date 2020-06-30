@@ -80,6 +80,7 @@ import '../Learning-Examples/Title.css'
 
     handleError(error) {
         console.log(error.response)
+        let errorMessage ='';
         this.setState({welcomeMessage: error.response.data.message})
         
        
