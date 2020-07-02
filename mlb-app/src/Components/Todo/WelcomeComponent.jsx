@@ -87,7 +87,7 @@ import '../Learning-Examples/Title.css'
           if(error.response && error.response.data){
             errorMessage += error.response.data.message
           }
-        this.setState({welcomeMessage: error.message})
+        this.setState({welcomeMessage: errorMessage})
         
        
       }
