@@ -20,7 +20,7 @@ import '../Learning-Examples/Title.css'
 
 <div class="breaking_news">
   <div class="label ripple">Breaking News</div>
-  <div class="news_title">MLB and MLBPA Reach Agreement: Players to report on July 1st</div>
+  <div class="news_title">MLB and MLBPA Reach Agreement: Opening Day scheduled for July 23rd</div>
 </div>
             
   <div className="container">
