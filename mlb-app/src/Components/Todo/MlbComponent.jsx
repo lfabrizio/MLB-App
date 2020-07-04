@@ -38,16 +38,7 @@ class MlbComponent extends Component {
 		.catch(err => {
 			console.log(err);
 		});
-    //   let url = `https://mlb-data.p.rapidapi.com/json/named.search_player_all.bam?active_sw='Y'&sport_code='mlb'&name_part="${this.state.search}`
-  
-    //   fetch(url)
-    //   .then(data => data.json() )
-    //   .then( json => {
-    //       console.log(json)
-         
-              
-    //       this.setState({output:json.results})
-    //       console.log(this.state.output)
+ 
       }
   
     
