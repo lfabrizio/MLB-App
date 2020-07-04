@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 //import cross origins from server
+// added spring security validation under package SpringSecurityConfigurationBasicAuth
 class HelloWorldService {
 
     executeHelloWorldService() {
