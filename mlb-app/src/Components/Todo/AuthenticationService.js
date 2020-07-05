@@ -4,6 +4,7 @@ class AuthenticationService {
     registerSuccessfulLogin(username, password){
         console.log('registered');
         sessionStorage.setItem('authenticatedUser', username);
+        this.setupAxiosInterceptors()
     }
 
     logout() {
@@ -32,6 +33,7 @@ class AuthenticationService {
                 if(this.isUserLoggedIn()) {
                 config.headers.authorization = basicAuthHeader
                 }
+                return config
             }
         )
     }
