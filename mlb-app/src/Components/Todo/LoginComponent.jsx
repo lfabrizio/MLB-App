@@ -33,20 +33,27 @@ class LoginComponent extends Component {
     // }
 
     loginClicked() {
-        if(this.state.username === "lou" && this.state.password=== "123"){
-            
-            AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.pasword);
-            // this will re-route to welcome landing page if done correctly
-            this.props.history.push(`/welcome/${this.state.username}`);
-            // this.setState({showSuccessMessage:true})
-            // this.setState({hasLoginFailed:false})
-        }
-        else {
-            this.setState({showSuccessMessage:false})
-            this.setState({hasLoginFailed:true})
-        }
+        // if(this.state.username === "lou" && this.state.password=== "123"){ 
+        //     AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.pasword);
+    
+        //     this.props.history.push(`/welcome/${this.state.username}`);
+        //     // this.setState({showSuccessMessage:true})
+        //     // this.setState({hasLoginFailed:false})
+        // }
+        // else {
+        //     this.setState({showSuccessMessage:false})
+        //     this.setState({hasLoginFailed:true})
+        // }
         
-        //console.log(this.state)
+        AuthenticationService
+        .executeBasicAuthenticationService(this.state.username, this.state.password)
+        .then(() => {
+                AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.pasword);
+                 this.props.history.push(`/welcome/${this.state.username}`);
+            }).catch( () => {
+                this.setState({showSuccessMessage:false})
+                this.setState({hasLoginFailed:true})
+            })
     }
 
     render() {
