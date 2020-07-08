@@ -21,6 +21,7 @@ import '../Learning-Examples/Title.css'
 <div class="breaking_news">
   <div class="label ripple">Breaking News</div>
   <div class="news_title">MLB and MLBPA Reach Agreement: Opening Day scheduled for July 23rd</div>
+  {/* <marquee className="news_title"></marquee> */}
 </div>
             
   <div className="container">
