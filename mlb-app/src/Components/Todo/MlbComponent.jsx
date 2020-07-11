@@ -46,7 +46,7 @@ class MlbComponent extends Component {
         
     return (
       <div className="results">
-		  
+		  <div class="ball"></div>
         <h1>MLB Projections 2020 </h1>
         <p>Enter Player: <input type="text" name="search" value={this.state.search} onChange={this.handleChange}/></p>
         <button onClick={this.buttonClick}>Search</button>
