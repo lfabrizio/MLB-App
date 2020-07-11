@@ -260,9 +260,6 @@ html, body {
 }
 
 
-
-
-
 #bat {
   position: fixed;
   top: 3em;
@@ -338,7 +335,7 @@ html, body {
   25% { height: 3em; width: 3em; }
   75% { height: 3em; width: 3em; }
   100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
-} 
+}  */
 
 /* //breaking news */
 
@@ -380,8 +377,6 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
 
 }
     
-  
-
 
 /* Ripple magic */
 .ripple {
@@ -453,5 +448,52 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
   }
   
   
-  
+ /* //list todos */
+ 
 
+@import url(https://fonts.googleapis.com/css?family=Graduate);
+
+html {
+	width: 100%;
+	height: 100%;
+  background-color: rgb(219, 229, 229);
+	background-image: linear-gradient(135deg, hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,0.5) 100%);
+	background-repeat: no-repeat;
+}
+body {
+	text-align: center;
+}
+
+.hanger {
+	display: inline-flex;
+	position: relative;
+	min-width: 44.444vmax;
+	height: 8.333vmax;
+	text-align: left;
+	background-color: #693E38;
+	background-image: linear-gradient(to bottom, rgba(255,255,255,.07) 50%, transparent 50%),
+										linear-gradient(to bottom, rgba(255,255,255,.13) 50%, transparent 50%),
+										linear-gradient(to bottom, transparent 50%, rgba(255,255,255,.17) 50%),
+										linear-gradient(to bottom, transparent 50%, rgba(255,255,255,.19) 50%);
+	background-size:  100% 0.722vmax,  100% 1.611vmax,  100% 2.056vmax,  100% 2.944vmax;
+
+	box-sizing: border-box;
+	border: 0.556vmax solid rgba(0,0,0,.4);
+	border-left-color: rgba(0,0,0,.2);
+  border-right-color: rgba(0,0,0,.5);
+}
+	.hook {
+		position: relative;
+    margin: 0 12.778vmax 0 0;
+		top: 1.667vmax;
+		left: 5.556vmax;
+		width: 0.889vmax;
+		height: 3.333vmax;
+		background: grey;
+		border-radius: 0.889vmax 0.889vmax 0 0;
+    background: linear-gradient(to right,
+                hsla(0,0%,54%,1) 0%,
+                hsla(0,0%,75%,1) 50%,
+                hsla(0,0%,54%,1) 100%);
+  }
+	

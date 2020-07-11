@@ -80,6 +80,59 @@ refreshTodos() {
 
     render() {
         return <div>
+            
+<div class="hanger">
+    <div class="hook">
+			<div class="cap js">
+				<div class="head">
+					<div class="logo">
+						<div>Javascript</div>
+					</div>
+					<div class="shade">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="hook">
+			<div class="cap css">
+				<div class="head">
+					<div class="logo">
+						<div>MySQL</div>
+					</div>
+					<div class="shade">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="hook">
+			<div class="cap html">
+				<div class="head">
+					<div class="logo">
+						<div>Java</div>
+					</div>
+					<div class="shade">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="hook"></div>
+    <div class="hook">
+			<div class="cap php">
+				<div class="head">
+					<div class="logo">
+						<div>React</div>
+						
+					</div>
+					<div class="shade">
+						<div>Spring Boot</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
             <h1>List Todos</h1>
            {this.state.mesage && <div className="alert alert-success">{this.state.message}</div>}
             <table>
