@@ -30,6 +30,10 @@ class AuthenticationService {
         this.setupAxiosInterceptors(this.createJWTToken(token))
     }
 
+    createJWTToken(token){
+        return 'Bearer' + token  
+    }
+
     logout() {
         sessionStorage.removeItem('autheticatedUser');
     }
