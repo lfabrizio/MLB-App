@@ -7,9 +7,11 @@ class AuthenticationService {
          {headers: {authorization: this.createBasicAuthToken(username, password)}})
     }
 
-    executeJwtAuthenticationService(username, password){
-        return axios.get('http://localhost:8080/authenticate',
-         {headers: {authorization: this.createBasicAuthToken(username, password)}})
+    executeJwtAuthenticationService(username, password) {
+        return axios.post('http://localhost:8080/authenticate', {
+            username,
+            password
+        })
     }
 
     createBasicAuthToken(username, password){
