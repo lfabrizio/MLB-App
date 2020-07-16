@@ -513,6 +513,7 @@ body {
 } 
 @keyframes spin { 100% { transform:rotate(360deg); } }
 
+/* // ball on stats page */
 .ball{
   background: url('http://www.clker.com/cliparts/G/Q/O/s/P/e/baseball-w-red-laces.svg');
   width: 103px;

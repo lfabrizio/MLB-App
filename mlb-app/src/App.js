@@ -7,7 +7,7 @@ import './bootstrap.css';
 class App extends Component {
   render() {
     return(
-      <div classname="App">
+      <div className="App">
         <TodoApp />
       </div>
     );
