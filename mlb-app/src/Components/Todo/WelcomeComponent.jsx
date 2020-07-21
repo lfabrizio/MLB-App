@@ -20,7 +20,7 @@ import '../Learning-Examples/Title.css'
 
 <div className="breaking_news">
   <div className="label ripple">Breaking News</div>
-  <div className="news_title">MLB and MLBPA Reach Agreement: Opening Day scheduled for July 23rd</div>
+  <div className="news_title">Dr. Anthony Fauci to throw out ceremonial first pitch - Yankees @ Nationals July 23rd</div>
   {/* <marquee className="news_title"></marquee> */}
 </div>
             

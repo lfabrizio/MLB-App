@@ -481,6 +481,7 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
     animation:         bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
   }
   
+  /* // bat on welcome page */
   #bat {
     position: fixed;
     top: 3em;
