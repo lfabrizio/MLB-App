@@ -20,7 +20,7 @@ import '../Learning-Examples/Title.css'
 
 <div className="breaking_news">
   <div className="label ripple">Breaking News</div>
-  <div className="news_title">Justin Verlander out with potential Tommy John Injury</div>
+  <div className="news_title">14 Miami Marlins players test positive for Covid-19, Game Postponed</div>
   {/* <marquee className="news_title"></marquee> */}
 </div>
             
