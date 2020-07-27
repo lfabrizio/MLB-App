@@ -20,13 +20,13 @@ import '../Learning-Examples/Title.css'
 
 <div className="breaking_news">
   <div className="label ripple">Breaking News</div>
-  <div className="news_title">Yankees @ Nationals Tonight at 7- Paxton vs. Strasburg</div>
+  <div className="news_title">Justin Verlander out with potential Tommy John Injury</div>
   {/* <marquee className="news_title"></marquee> */}
 </div>
             
   <div className="container">
   
-    <h2 className="main">MLB ⚾ APP</h2>
+    <h2 className="main">MLB ⚾ Today</h2>
     
   </div>
   <ul>
