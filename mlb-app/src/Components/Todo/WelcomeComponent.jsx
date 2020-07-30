@@ -30,7 +30,7 @@ import '../Learning-Examples/Title.css'
     
   </div>
   <ul>
-    <li><a href="https://github.com/lfabrizio/MLB-App"><span data-text="News">News</span></a></li>
+    <li><a href="https://www.mlb.com/news"><span data-text="News">News</span></a></li>
     <li><a href="https://www.mlb.com/scores"><span data-text="Scores">Scores</span></a></li>
     <li><a href="https://www.mlb.com/standings"><span data-text="Standings">Standings</span></a></li>
     <li><a href="https://www.mlb.com/stats"><span data-text="Statistics">Statistics</span></a></li>
