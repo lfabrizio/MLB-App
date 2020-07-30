@@ -34,7 +34,7 @@ import '../Learning-Examples/Title.css'
     <li><a href="https://www.mlb.com/scores"><span data-text="Scores">Scores</span></a></li>
     <li><a href="https://www.mlb.com/standings"><span data-text="Standings">Standings</span></a></li>
     <li><a href="https://www.mlb.com/stats"><span data-text="Statistics">Statistics</span></a></li>
-    <li><a href="https://www.cbssports.com/fantasy/baseball/rankings/"><span data-text="Fantasy">Fantasy Baseball</span></a></li>
+    <li><a href="https://www.cbssports.com/fantasy/baseball/"><span data-text="Fantasy">Fantasy Baseball</span></a></li>
   </ul>
 </header>
 
