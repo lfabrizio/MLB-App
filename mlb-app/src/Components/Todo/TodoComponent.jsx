@@ -4,7 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import TodoDataService from '../../API/Todo/TodoDataService.js'
 import AuthenticationService from './AuthenticationService.js'
 
-// entity set up on server , will continue shortly
+// entity set up on server , JPA entity , continued
 
 class TodoComponent extends Component {
     constructor(props) {
