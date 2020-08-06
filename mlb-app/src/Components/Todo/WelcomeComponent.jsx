@@ -21,7 +21,7 @@ import '../Learning-Examples/Title.css'
 <div className="breaking_news">
   <div className="label ripple">Breaking News</div>
   <div className="news_title">MLB and MLBPA agree to seven inning Doubleheaders</div>
-  {/* <marquee className="news_title"></marquee> */}
+  
 </div>
             
   <div className="container">
