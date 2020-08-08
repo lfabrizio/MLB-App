@@ -20,7 +20,7 @@ import '../Learning-Examples/Title.css'
 
 <div className="breaking_news">
   <div className="label ripple">Breaking News</div>
-  <div className="news_title">MLB and MLBPA agree to seven inning Doubleheaders</div>
+  <div className="news_title">Miami Marlins best record in through first two weeks</div>
   
 </div>
             
