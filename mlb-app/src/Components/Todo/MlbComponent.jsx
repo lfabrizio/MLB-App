@@ -54,7 +54,8 @@ class MlbComponent extends Component {
            this.state.output === '' ? <p> Stats</p> : 
            this.state.output.map((search_player_all) =>
            <div class="row">
-           // finish  solo learn tutorial and test
+           {/* // finish  solo learn tutorial and test
+           // set up mysql to react */}
          </div>
            )
     }
