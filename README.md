@@ -2,7 +2,7 @@
 
 
 #######################################
-	   Creating table
+	   Creating tables for battingavg, home runs and rbis to start
 #######################################
 
 CREATE TABLE `players` (
