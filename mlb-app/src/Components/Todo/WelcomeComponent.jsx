@@ -20,7 +20,7 @@ import '../Learning-Examples/Title.css'
 
 <div className="breaking_news">
   <div className="label ripple">Breaking News</div>
-  <div className="news_title">Giancarlo Stanton toInjured List</div>
+  <div className="news_title">Giancarlo Stanton to Injured List</div>
   
 </div>
             
