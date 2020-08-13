@@ -20,7 +20,7 @@ import '../Learning-Examples/Title.css'
 
 <div className="breaking_news">
   <div className="label ripple">Breaking News</div>
-  <div className="news_title">Giancarlo Stanton to Injured List</div>
+  <div className="news_title">Discussion on playoff bubble location</div>
   
 </div>
             
@@ -46,7 +46,7 @@ import '../Learning-Examples/Title.css'
              {this.props.match.params.name}
             </div>
             <div className="message">
-                Click for Customized Message
+                Click to see latest update 
                 {/* manage todos <Link to="/todos">here</Link> */}
                 <button onClick={this.retrieveWelcomeMessage}> Message</button>
                 <div className="message"> {this.state.welcomeMessage}</div>
