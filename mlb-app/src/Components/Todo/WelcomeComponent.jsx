@@ -20,7 +20,7 @@ import '../Learning-Examples/Title.css'
 
 <div className="breaking_news">
   <div className="label ripple">Breaking News</div>
-  <div className="news_title">Discussion on playoff bubble location</div>
+  <div className="news_title">Aaron Judge out of lineup</div>
   
 </div>
             

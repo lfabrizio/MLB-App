@@ -139,11 +139,11 @@ refreshTodos() {
                 <thead>
                     <tr>
                         <th>id</th>
-                        <th>description</th>
+                        <th>Description</th>
                         <th>Target Date</th>
-                        <th>Is Completed?</th>
-                        <th>Delete</th>
-                        <th>Delete</th>
+                        <th>Is task Completed?</th>
+                        <th>Delete1</th>
+                        <th>Delete2</th>
                     </tr>
                 </thead>
                 <tbody>
