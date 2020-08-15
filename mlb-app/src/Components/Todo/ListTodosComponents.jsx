@@ -138,7 +138,7 @@ refreshTodos() {
             <table>
                 <thead>
                     <tr>
-                        <th>id</th>
+                        <th>unique id</th>
                         <th>Description</th>
                         <th>Target Date</th>
                         <th>Is task Completed?</th>
