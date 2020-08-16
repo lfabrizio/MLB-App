@@ -86,7 +86,7 @@ refreshTodos() {
 			<div class="cap js">
 				<div class="head">
 					<div class="logo">
-						<div>Javascript</div>
+						<div>Java</div>
 					</div>
 					<div class="shade">
 						<div></div>
