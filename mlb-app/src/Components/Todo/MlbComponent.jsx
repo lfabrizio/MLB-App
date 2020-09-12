@@ -51,7 +51,7 @@ class MlbComponent extends Component {
         <p>Enter Player: <input type="text" name="search" value={this.state.search} onChange={this.handleChange}/></p>
         <button onClick={this.buttonClick}>Search</button>
        {
-           this.state.output === '' ? <p> Stats</p> : 
+           this.state.output === '' ? <p> Statistics through 9/12/2020</p> : 
            this.state.output.map((search_player_all) =>
            <div class="row">
            {/* // finish  solo learn tutorial and test, learn hash tables
