@@ -5,7 +5,19 @@ import React, {Component} from 'react'
 // add news
 // add standings compoment
 // react router and then bacxk to mysql hibernate
+// class FantasyComponent extends Component {
+//     constructor(props){
+//         super(props)
 
+//         this.state = {
+//             search: 'search',
+//             output: '',
+//         }
+
+//         this.handleChange = this.handleChange.bind(this)
+//         this.buttonClick = this.buttonClick.bind(this)
+
+//     }
 
 
 
