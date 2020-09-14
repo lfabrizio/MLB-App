@@ -4,6 +4,7 @@ import React, {Component} from 'react'
 // maybe projections, and fantasy points
 // add news
 // add standings compoment
+// react router and then bacxk to mysql hibernate
 
 
 
