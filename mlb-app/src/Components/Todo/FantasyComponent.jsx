@@ -16,7 +16,7 @@ import React, {Component} from 'react'
 
 //         this.handleChange = this.handleChange.bind(this)
 //         this.buttonClick = this.buttonClick.bind(this)
-
+// what do i want this to do? display fantasy point to start ?
 //     }
 
 
