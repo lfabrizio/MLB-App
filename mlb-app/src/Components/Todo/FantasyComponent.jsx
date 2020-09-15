@@ -5,15 +5,16 @@ import React, {Component} from 'react'
 // add news
 // add standings compoment
 // react router and then bacxk to mysql hibernate
-// class FantasyComponent extends Component {
-//     constructor(props){
-//         super(props)
 
-//         this.state = {
-//             search: 'search',
-//             output: '',
-//         }
 
+class FantasyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        
+      }
+    }
+  }
 //         this.handleChange = this.handleChange.bind(this)
 //         this.buttonClick = this.buttonClick.bind(this)
 // what do i want this to do? display fantasy point to start ?
