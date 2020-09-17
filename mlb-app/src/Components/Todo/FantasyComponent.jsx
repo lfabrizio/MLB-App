@@ -12,17 +12,23 @@ class FantasyComponent extends React.Component {
       super(props);
       this.state = {
         
-      }
-    }
-
-  }
+      
 //         this.handleChange = this.handleChange.bind(this)
 //         this.buttonClick = this.buttonClick.bind(this)
 // what do i want this to do? display fantasy point to start ?
 // let me try to draw points from fantasy points table in mySQL
 //     }
 
+render() {
+    return (
+      <div>
+        <p>Hello World!</p>
+      </div>
+    )
 
-
+    }
+      }
+    }
+}
 
 export default FantasyComponent
