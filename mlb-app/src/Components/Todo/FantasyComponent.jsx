@@ -14,10 +14,12 @@ class FantasyComponent extends React.Component {
         
       }
     }
+
   }
 //         this.handleChange = this.handleChange.bind(this)
 //         this.buttonClick = this.buttonClick.bind(this)
 // what do i want this to do? display fantasy point to start ?
+// let me try to draw points from fantasy points table in mySQL
 //     }
 
 
