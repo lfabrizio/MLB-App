@@ -22,7 +22,8 @@ class FantasyComponent extends React.Component {
 render() {
     return (
       <div>
-        <p>Hello World!</p>
+        <p>Fantasy Rankings 2020</p>
+        <p>Fantasy Points Leaders</p>
       </div>
     )
 
